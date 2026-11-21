@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paperback 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-15 01:48+0000\n"
+"POT-Creation-Date: 2026-11-21 09:02-0700\n"
 "PO-Revision-Date: 2026-02-28 00:00-0700\n"
 "Last-Translator: Quin Gillespie <trypsynth@gmail.com>\n"
 "Language-Team: Español <es@example.com>\n"
@@ -4689,6 +4689,7 @@ msgstr "Libro abierto"
 msgid "Locate"
 msgstr "Localizar"
 
+#. TRANSLATORS: Button confirming removal of a bookmark and its note
 #: kt swift
 #, fuzzy
 msgid "Remove"
@@ -4979,8 +4980,8 @@ msgstr "Nueva norma"
 msgid "Edit Rule"
 msgstr "Editar regla"
 
-#. TRANSLATORS: Button to save the rule and dismiss the editor
-#: swift
+#. TRANSLATORS: Button that saves what was typed and closes the editor, such as a speech rule or a bookmark's note
+#: kt swift
 #, fuzzy
 msgid "Save"
 msgstr "Guardar"
@@ -6036,6 +6037,148 @@ msgstr "Legibilidad"
 #, fuzzy
 msgid "Time"
 msgstr "Tiempo"
+
+#. TRANSLATORS: Shown and announced with how far through a book's chapter the reader is: the number of words left in it; {} is the number. Which of the three forms is used depends on the language's plural rule, and the "many" form's trailing character isn't a typo.
+#: kt swift
+#, fuzzy
+msgid "{} word left"
+msgstr "{} palabra restante"
+
+#: kt swift
+#, fuzzy
+msgid "{} words left"
+msgstr "{} palabras restantes"
+
+#: kt swift
+#, fuzzy
+msgid "{} words left⁣"
+msgstr "{} palabras restantes⁣"
+
+#. TRANSLATORS: What tapping the progress under the read-aloud bar does: it switches between how far through the whole book the reader is, and how far through the current chapter with how much of it is left
+#: kt swift
+#, fuzzy
+msgid "Show book progress"
+msgstr "Mostrar progreso del libro"
+
+#. TRANSLATORS: What tapping the progress under the read-aloud bar does: it switches between how far through the whole book the reader is, and how far through the current chapter with how much of it is left
+#: kt swift
+#, fuzzy
+msgid "Show chapter progress"
+msgstr "Mostrar progreso del capítulo"
+
+#. TRANSLATORS: Name of the "Bookmark" navigation unit, which moves between the reader's bookmarks and notes
+#: kt swift
+#, fuzzy
+msgid "Bookmark"
+msgstr "Marcapáginas"
+
+#. TRANSLATORS: Announced after clearing a bookmark's note, which keeps the bookmark
+#: kt swift
+#, fuzzy
+msgid "Note deleted."
+msgstr "Nota eliminada."
+
+#. TRANSLATORS: VoiceOver label for the note shown under the passage being read; {} is the note's text
+#: kt swift
+#, fuzzy
+msgid "Note: {}"
+msgstr "Nota: {}"
+
+#. TRANSLATORS: VoiceOver action on a paragraph in text mode that marks or unmarks it with a bookmark
+#: kt swift
+#, fuzzy
+msgid "Add Bookmark"
+msgstr "Añadir marcapáginas"
+
+#. TRANSLATORS: VoiceOver action on a paragraph in text mode that marks or unmarks it with a bookmark
+#: kt swift
+#, fuzzy
+msgid "Remove Bookmark"
+msgstr "Eliminar marcapáginas"
+
+#. TRANSLATORS: VoiceOver value of the bookmark button when the bookmark at the current paragraph has a note
+#: kt swift
+#, fuzzy
+msgid "Has note"
+msgstr "Tiene nota"
+
+#. TRANSLATORS: Title of the alert confirming removal of a bookmark that has a note
+#: kt swift
+#, fuzzy
+msgid "Remove this bookmark and its note?"
+msgstr "¿Eliminar este marcapáginas y su nota?"
+
+#. TRANSLATORS: Menu item / accessibility action to write a note on the current bookmark, or to change the one it has
+#: kt swift
+#, fuzzy
+msgid "Edit Note..."
+msgstr "Editar nota..."
+
+#. TRANSLATORS: Menu item / accessibility action to write a note on the current bookmark, or to change the one it has
+#: kt swift
+#, fuzzy
+msgid "Add Note..."
+msgstr "Añadir nota..."
+
+#. TRANSLATORS: Label for the picker choosing whether the Bookmarks screen shows everything, only bookmarks, or only notes
+#: swift
+#, fuzzy
+msgid "Show"
+msgstr "Mostrar"
+
+#. TRANSLATORS: Swipe / accessibility action deleting a bookmark from the Bookmarks screen
+#: kt swift
+#, fuzzy
+msgid "Delete"
+msgstr "Eliminar"
+
+#. TRANSLATORS: Title shown when the current document has no bookmarks or notes
+#: kt swift
+#, fuzzy
+msgid "No Bookmarks"
+msgstr "Sin marcapáginas"
+
+#. TRANSLATORS: Description shown under the "No Bookmarks" title
+#: kt swift
+#, fuzzy
+msgid "Tap the bookmark button while reading to mark your place."
+msgstr "Toca el botón de marcapáginas mientras lees para marcar tu lugar."
+
+#. TRANSLATORS: VoiceOver hint on the note shown under the passage being read
+#: swift
+#, fuzzy
+msgid "Double-tap to edit."
+msgstr "Pulsa dos veces para editar."
+
+#. TRANSLATORS: Heading over the passage (or audiobook time) a bookmark note is attached to
+#: swift
+#, fuzzy
+msgid "Bookmarked"
+msgstr "Marcado"
+
+#. TRANSLATORS: Heading over the text field where a bookmark's note is typed
+#: swift
+#, fuzzy
+msgid "Note"
+msgstr "Nota"
+
+#. TRANSLATORS: Button that clears a bookmark's note but keeps the bookmark
+#: kt swift
+#, fuzzy
+msgid "Delete Note"
+msgstr "Eliminar nota"
+
+#. TRANSLATORS: TalkBack action label for a long press on the bookmark button, which opens its note and list options
+#: kt
+#, fuzzy
+msgid "show note and bookmark options"
+msgstr "mostrar nota y opciones de marcapáginas"
+
+#. TRANSLATORS: TalkBack action label for a bookmark in the Bookmarks screen, read as "double tap to go to bookmark"
+#: kt
+#, fuzzy
+msgid "go to bookmark"
+msgstr "ir al marcapáginas"
 
 #, fuzzy
 #~ msgid "Announce &Chapter Time"

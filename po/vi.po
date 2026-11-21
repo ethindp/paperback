@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paperback 0.6.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-15 01:48+0000\n"
+"POT-Creation-Date: 2026-11-21 09:02-0700\n"
 "PO-Revision-Date: 2026-01-25 15:00+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -4790,6 +4790,7 @@ msgstr "Sách mở"
 msgid "Locate"
 msgstr "Định vị"
 
+#. TRANSLATORS: Button confirming removal of a bookmark and its note
 #: kt swift
 #, fuzzy
 msgid "Remove"
@@ -5080,8 +5081,8 @@ msgstr "Quy định mới"
 msgid "Edit Rule"
 msgstr "Chỉnh sửa quy tắc"
 
-#. TRANSLATORS: Button to save the rule and dismiss the editor
-#: swift
+#. TRANSLATORS: Button that saves what was typed and closes the editor, such as a speech rule or a bookmark's note
+#: kt swift
 #, fuzzy
 msgid "Save"
 msgstr "Lưu"
@@ -6137,6 +6138,148 @@ msgstr "Khả năng đọc"
 #, fuzzy
 msgid "Time"
 msgstr "Thời gian"
+
+#. TRANSLATORS: Shown and announced with how far through a book's chapter the reader is: the number of words left in it; {} is the number. Which of the three forms is used depends on the language's plural rule, and the "many" form's trailing character isn't a typo.
+#: kt swift
+#, fuzzy
+msgid "{} word left"
+msgstr "{} từ còn lại"
+
+#: kt swift
+#, fuzzy
+msgid "{} words left"
+msgstr "{} từ còn lại"
+
+#: kt swift
+#, fuzzy
+msgid "{} words left⁣"
+msgstr "{} từ còn lại⁣"
+
+#. TRANSLATORS: What tapping the progress under the read-aloud bar does: it switches between how far through the whole book the reader is, and how far through the current chapter with how much of it is left
+#: kt swift
+#, fuzzy
+msgid "Show book progress"
+msgstr "Hiển thị tiến độ sách"
+
+#. TRANSLATORS: What tapping the progress under the read-aloud bar does: it switches between how far through the whole book the reader is, and how far through the current chapter with how much of it is left
+#: kt swift
+#, fuzzy
+msgid "Show chapter progress"
+msgstr "Hiển thị tiến độ chương"
+
+#. TRANSLATORS: Name of the "Bookmark" navigation unit, which moves between the reader's bookmarks and notes
+#: kt swift
+#, fuzzy
+msgid "Bookmark"
+msgstr "Dấu trang"
+
+#. TRANSLATORS: Announced after clearing a bookmark's note, which keeps the bookmark
+#: kt swift
+#, fuzzy
+msgid "Note deleted."
+msgstr "Ghi chú đã xóa."
+
+#. TRANSLATORS: VoiceOver label for the note shown under the passage being read; {} is the note's text
+#: kt swift
+#, fuzzy
+msgid "Note: {}"
+msgstr "Ghi chú: {}"
+
+#. TRANSLATORS: VoiceOver action on a paragraph in text mode that marks or unmarks it with a bookmark
+#: kt swift
+#, fuzzy
+msgid "Add Bookmark"
+msgstr "Thêm dấu trang"
+
+#. TRANSLATORS: VoiceOver action on a paragraph in text mode that marks or unmarks it with a bookmark
+#: kt swift
+#, fuzzy
+msgid "Remove Bookmark"
+msgstr "Xóa dấu trang"
+
+#. TRANSLATORS: VoiceOver value of the bookmark button when the bookmark at the current paragraph has a note
+#: kt swift
+#, fuzzy
+msgid "Has note"
+msgstr "Có ghi chú"
+
+#. TRANSLATORS: Title of the alert confirming removal of a bookmark that has a note
+#: kt swift
+#, fuzzy
+msgid "Remove this bookmark and its note?"
+msgstr "Xóa dấu trang này và ghi chú của nó?"
+
+#. TRANSLATORS: Menu item / accessibility action to write a note on the current bookmark, or to change the one it has
+#: kt swift
+#, fuzzy
+msgid "Edit Note..."
+msgstr "Chỉnh sửa ghi chú..."
+
+#. TRANSLATORS: Menu item / accessibility action to write a note on the current bookmark, or to change the one it has
+#: kt swift
+#, fuzzy
+msgid "Add Note..."
+msgstr "Thêm ghi chú..."
+
+#. TRANSLATORS: Label for the picker choosing whether the Bookmarks screen shows everything, only bookmarks, or only notes
+#: swift
+#, fuzzy
+msgid "Show"
+msgstr "Hiển thị"
+
+#. TRANSLATORS: Swipe / accessibility action deleting a bookmark from the Bookmarks screen
+#: kt swift
+#, fuzzy
+msgid "Delete"
+msgstr "Xóa"
+
+#. TRANSLATORS: Title shown when the current document has no bookmarks or notes
+#: kt swift
+#, fuzzy
+msgid "No Bookmarks"
+msgstr "Không có dấu trang"
+
+#. TRANSLATORS: Description shown under the "No Bookmarks" title
+#: kt swift
+#, fuzzy
+msgid "Tap the bookmark button while reading to mark your place."
+msgstr "Nhấn nút dấu trang khi đọc để đánh dấu vị trí của bạn."
+
+#. TRANSLATORS: VoiceOver hint on the note shown under the passage being read
+#: swift
+#, fuzzy
+msgid "Double-tap to edit."
+msgstr "Nhấn đôi lần để chỉnh sửa."
+
+#. TRANSLATORS: Heading over the passage (or audiobook time) a bookmark note is attached to
+#: swift
+#, fuzzy
+msgid "Bookmarked"
+msgstr "Đã đánh dấu"
+
+#. TRANSLATORS: Heading over the text field where a bookmark's note is typed
+#: swift
+#, fuzzy
+msgid "Note"
+msgstr "Ghi chú"
+
+#. TRANSLATORS: Button that clears a bookmark's note but keeps the bookmark
+#: kt swift
+#, fuzzy
+msgid "Delete Note"
+msgstr "Xóa ghi chú"
+
+#. TRANSLATORS: TalkBack action label for a long press on the bookmark button, which opens its note and list options
+#: kt
+#, fuzzy
+msgid "show note and bookmark options"
+msgstr "hiển thị ghi chú và tùy chọn dấu trang"
+
+#. TRANSLATORS: TalkBack action label for a bookmark in the Bookmarks screen, read as "double tap to go to bookmark"
+#: kt
+#, fuzzy
+msgid "go to bookmark"
+msgstr "đi tới dấu trang"
 
 #, fuzzy
 #~ msgid "Announce &Chapter Time"

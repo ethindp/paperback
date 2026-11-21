@@ -1,4 +1,4 @@
-<!-- machine-translated from doc/readme.md (source-hash: b1e8b46ff69081ba; sections: 64167837,db723a70,df2f4c18,aa6b9ca2,1387e8b7,102030be,8423460b,490ed50c,d3762a01,e9860ee8,15aeaaed); please review and edit as needed -->
+<!-- machine-translated from doc/readme.md (source-hash: 2e060f0cdd2c601f; sections: 64167837,db723a70,df2f4c18,aa6b9ca2,1387e8b7,102030be,8423460b,77b4e1b6,d3762a01,e9860ee8,15aeaaed); please review and edit as needed -->
 
 # Paperback - versión 1.1
 
@@ -226,6 +226,8 @@ Cada aplicación tiene dos formas de leer un documento. En modo texto, lees el t
 
 Los audiolibros, como DAISY, M4B y libros MP3, reproducen su propia grabación en su lugar.
 
+En modo lectura en voz alta, la pantalla muestra en qué punto del libro estás. Tócalo para ver el capítulo en su lugar: su nombre, en qué punto estás en él, y cuántas palabras quedan de él, p. ej. «Capítulo 3, 42%, 1.850 palabras restantes». En un audiolibro muestra la hora, p. ej. «Capítulo 3, 4:10 de 12:00, 7:50 restantes». Tócalo de nuevo para volver al libro completo.
+
 ### La barra de lectura
 
 La barra en la parte inferior de la pantalla tiene, de izquierda a derecha:
@@ -236,12 +238,27 @@ La barra en la parte inferior de la pantalla tiene, de izquierda a derecha:
 
 También puedes deslizar hacia arriba o hacia abajo en el botón reproducir para moverte por la unidad de navegación, sin necesidad de alcanzar los botones Anterior y Siguiente. Si eso es todo lo que usas, la configuración Ocultar botones Anterior y Siguiente los elimina del camino del lector de pantalla. La configuración Deslizar hacia arriba avanza elige en qué dirección va un deslizamiento.
 
+### Marcapáginas y notas
+
+El botón de marcapáginas en la parte superior de la pantalla marca tu lugar. Tócalo para marcar el párrafo en el que estés, y tócalo de nuevo para eliminar el marcapáginas. Tu lector de pantalla dice Seleccionado cuando el párrafo ya tiene uno. Al eliminar un marcapáginas que tiene una nota, pregunta primero.
+
+* En modo lectura en voz alta, el marcapáginas va al inicio del párrafo que se está leyendo, por lo que volver a él lee ese párrafo de nuevo desde el principio. En modo texto, va al párrafo en el que estés.
+* En un audiolibro sin texto, como un libro MP3, el marcapáginas mantiene la hora exacta en su lugar, como lo hace en la versión de escritorio.
+* Mantén pulsado el botón de marcapáginas, o usa sus acciones del lector de pantalla, para añadir o editar una nota, o para abrir la lista Marcadores. Mientras escribes una nota, la lectura se pausa, y se reinicia cuando cierres la nota.
+* En modo lectura en voz alta, la nota de un párrafo se muestra debajo de él. Toca la nota para editarla.
+* En modo texto, cada párrafo tiene acciones del lector de pantalla para añadir o eliminar un marcapáginas y para añadir o editar una nota. En iOS, un párrafo marcado dice Marcapáginas, o su nota, después de su texto, y el rotor Marcadores se mueve entre ellos.
+* **Marcadores** en el menú Más opciones lista todos los marcapáginas y notas, con Todos, Marcadores y Notas para filtrarlos. Se abre en el más cercano a donde estés. Elige uno para ir a él. Desliza sobre un marcapáginas en iOS, o mantén pulsado en Android, o usa las acciones del lector de pantalla, para editar su nota o eliminarlo.
+* Una vez que un documento tiene marcapáginas, Marcapáginas se une a las unidades de navegación en la barra de lectura, por lo que anterior y siguiente se mueven entre ellos.
+
+Los marcapáginas y notas son los mismos que usa la versión de escritorio, por lo que viajan entre ellos en el archivo `.paperback` de un documento.
+
 ### Más opciones
 
 El menú Más opciones es donde vive todo lo demás. Algunos elementos funcionan un poco diferente en cada aplicación.
 
 * **Cambiar a modo TTS o Cambiar a modo Texto:** se mueve entre el modo lectura en voz alta y el modo texto, descrito arriba. En modo texto, un elemento Lectura en voz alta inicia y pausa la lectura en voz alta sin salir del modo texto.
 * **Tabla de contenidos:** los capítulos del libro, abiertos en el que estás leyendo. Elige uno para ir directamente a él. Las entradas con capítulos bajo ellas pueden expandirse y contraerse con las acciones del lector de pantalla.
+* **Marcadores:** tus marcapáginas y notas en este documento, descritos arriba.
 * **Elementos:** una lista de los encabezados o enlaces del documento. Cambia entre los dos con el selector de Tipo en iOS, o las pestañas en Android, luego elige uno para ir a él.
 * **Buscar:** escribe lo que quieres buscar, o elige una búsqueda anterior del Historial de búsquedas, y elige si deseas coincidir mayúsculas y minúsculas, coincidir solo palabras completas, o usar una expresión regular. Buscar anterior y Buscar siguiente saltan a una coincidencia y dicen dónde llegó, y Buscar permanece abierto para que puedas continuar. En modo lectura en voz alta, Buscar también aparece como una unidad de navegación en la barra de lectura, para que puedas navegar por las coincidencias desde allí también. **Detener lectura después de coincidencias de búsqueda** en Configuración bajo Síntesis de voz está activado por defecto y se detiene después de leer el párrafo que contiene una coincidencia. Desactívalo para continuar leyendo desde la coincidencia mientras los controles Anterior y Siguiente de la barra de lectura aún navegan por Buscar.
 * **Ir a:** salta a una línea, una página, o un porcentaje del documento. Elige cuál con el selector de Modo.
@@ -258,7 +275,7 @@ El menú Más opciones es donde vive todo lo demás. Algunos elementos funcionan
 
 ### Teclados y auriculares
 
-Con un teclado, los atajos de escritorio para abrir libros, documentos recientes, Buscar, Ir a, la tabla de contenidos, contar palabras, información del documento, exportar y el temporizador de sueño funcionan todos, usando `Cmd` en lugar de `Ctrl` en iOS. También lo hacen las teclas de una sola letra para moverte por encabezado, página, enlace y el resto, y `Space` reproduce y pausa. En iOS, las teclas de una sola letra solo llegan a Paperback mientras la Quick Nav de una sola letra de VoiceOver está desactivada.
+Con un teclado, todos los atajos de escritorio para abrir libros, documentos recientes, Buscar, Ir a, la tabla de contenidos, contar palabras, información del documento, exportar y el temporizador de suspensión funcionan, usando `Cmd` en lugar de `Ctrl` en iOS. También lo hacen las teclas de una sola letra para moverte por encabezado, página, enlace y el resto, y `Space` reproduce y pausa. Los atajos de marcapáginas coinciden con los de escritorio también: `B` y `Shift+B` se mueven al próximo y al anterior marcapáginas, `N` y `Shift+N` a la próxima y a la anterior nota, `Ctrl+Shift+B` añade o elimina un marcapáginas, `Ctrl+Shift+N` añade o edita una nota, y `Ctrl+B` abre la lista Marcadores. En iOS, las teclas de una sola letra solo llegan a Paperback mientras la Quick Nav de una sola letra de VoiceOver está desactivada.
 
 En Android, un botón de auricular reproduce y pausa con una pulsación, avanza con dos, y retrocede con tres.
 
